@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/movimento_cadastrar.js" defer></script>
+    <title>Cadastrar Movimentação Bancária</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>&emsp;&emsp;
+            <span class="titulo_menu">Operações</span>&emsp;
+            <a href="./movimento_cadastrar.html">Cadastrar Movimento</a>&emsp;
+            <a href="./movimento_consultar.html">Consultar Movimento</a>&emsp;
+            <br><br><hr><br>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrar Transação Bancária</h1>
+        <br><br>
+        <form>
+            <label for="idUsuario">Código do Usuário (Titular)</label><br>
+            <input type="number" id="idUsuario" required><br><br>
+
+            <label for="idConta">Código da Conta Corrente</label><br>
+            <input type="number" id="idConta" required><br><br>
+
+            <label for="tipo">Tipo de Transação</label><br>
+            <select id="tipo" style="padding: 5px; width: 220px;" required>
+                <option value="">Selecione...</option>
+                <option value="DEPOSITO">DEPOSITO</option>
+                <option value="SAQUE">SAQUE</option>
+            </select><br><br>
+
+            <label for="valor">Valor da Operação (R$)</label><br>
+            <input type="number" step="0.01" id="valor" required><br><br>
+
+            <label for="data">Data da Operação</label><br>
+<input type="date" id="data" style="color-scheme: dark;" required><br><br>
+
+            <button id="btn_cadastrar">Efetuar Transação</button><br><br><br>
+        </form>
+        <div id="resposta" class="resposta"></div>
+    </main>
+</body>
+</html>

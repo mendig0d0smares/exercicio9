@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/movimento_consultar.js" defer></script>
+    <title>Consultar Movimentações</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>&emsp;&emsp;
+            <span class="titulo_menu">Operações</span>&emsp;
+            <a href="./movimento_cadastrar.html">Cadastrar Movimento</a>&emsp;
+            <a href="./movimento_consultar.html">Consultar Movimento</a>&emsp;
+            <br><br><hr><br>
+        </nav>
+    </header>
+    <main>
+        <h2>Consulta de Movimento por Código (ID)</h2>
+        <br><br>
+        <form>
+            <label for="codMovimento">Código do Movimento (ID)</label><br>
+            <input type="number" id="codMovimento" required><br><br>
+
+            <button id="btn_consultar">Consultar</button><br><br><br>
+        </form>
+
+        <br><br>
+        <div id="resposta" class="resposta"></div>
+    </main>
+</body>
+
+</html>
